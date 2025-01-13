@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100%;
+  min-width: 630px;
+  overflow-y: hidden;
+  scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+input {
+  width: 420px;
+}
+
+.container img {
+  display: block;
+  width: 200%;
+  height: auto;
+  max-height: 100%;
+}
+
+.mountain-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+}
+
+.climber-wrapper {
+  position: absolute;
+  width: 200px;
+  height: 323px;
+  bottom: 0;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.z-index {
+  z-index: 100;
+}
+
+.dancing {
+  animation: dancing 4s ease-in-out infinite;
+}
+
+@keyframes dancing {
+  50% {
+    rotate: 720deg;
+    transform: translateX(100px);
+  }
+
+  100% {
+    rotate: 0deg;
+    transform: translateX(0);
+  }
+}
+
+.sign {
+  border: 1px solid #000;
+  padding: 5px;
+  position: absolute;
+  bottom: 300px;
+  border-radius: 10px;
+  background-color: #00ff0025;
+  z-index: 10;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+/* #region Points */
+
+.point {
+  position: absolute;
+  width: 2%;
+  height: 1%;
+  background-color: red;
+  z-index: 10;
+  transform: translate(-50%, -50%);
+}
+
+.point:nth-child(1) {
+  top: 60%;
+  left: 38%;
+}
+
+.point:nth-child(2) {
+  top: 50%;
+  left: 45%;
+}
+
+.point:nth-child(3) {
+  top: 40%;
+  left: 47%;
+}
+
+.point:nth-child(4) {
+  top: 45%;
+  left: 55%;
+}
+
+.point:nth-child(5) {
+  top: 42%;
+  left: 62%;
+}
+
+.point:nth-child(6) {
+  top: 37%;
+  left: 70%;
+}
+
+.point:nth-child(7) {
+  top: 25%;
+  left: 78%;
+}
+
+.point:nth-child(8) {
+  top: 12%;
+  left: 85%;
+}
+
+.point:nth-child(9) {
+  top: 18%;
+  left: 88%;
+}
+
+.point:nth-child(10) {
+  top: 28%;
+  left: 95%;
+}
+
+.point:nth-child(11) {
+  top: 35%;
+  left: 103%;
+}
+
+.point:nth-child(12) {
+  top: 42%;
+  left: 105%;
+}
+
+.point:nth-child(13) {
+  top: 46%;
+  left: 114%;
+}
+
+.point:nth-child(14) {
+  top: 48%;
+  left: 120%;
+}
+
+.point:nth-child(15) {
+  top: 60%;
+  left: 133%;
+}
+
+.point:nth-child(16) {
+  top: 70%;
+  left: 135%;
+}
+
+.point:nth-child(17) {
+  top: 80%;
+  left: 143%;
+}
+
+.point:nth-child(18) {
+  top: 85%;
+  left: 150%;
+}
+
+.point:nth-child(19) {
+  top: 90%;
+  left: 158%;
+}
+
+.point:nth-child(20) {
+  top: 80%;
+  left: 165%;
+}
+
+.point:nth-child(21) {
+  top: 70%;
+  left: 173%;
+}
+
+.point:nth-child(22) {
+  top: 75%;
+  left: 180%;
+}
+
+.point:nth-child(23) {
+  top: 70%;
+  left: 188%;
+}
+
+.point:nth-child(24) {
+  top: 65%;
+  left: 191%;
+}
+
+.point:nth-child(25) {
+  top: 55%;
+  left: 183%;
+}
+
+.point:nth-child(26) {
+  top: 45%;
+  left: 175%;
+}
+
+.point:nth-child(27) {
+  top: 35%;
+  left: 168%;
+}
+
+.point:nth-child(28) {
+  top: 25%;
+  left: 165%;
+}
+
+.point:nth-child(29) {
+  top: 20%;
+  left: 158%;
+}
+
+.point:nth-child(30) {
+  top: 10%;
+  left: 155%;
+}
+
+.point:nth-child(31) {
+  top: 3%;
+  left: 149%;
+}
+
+.win-win {
+  position: absolute;
+  top: 0%;
+  left: 139%;
+  z-index: 100;
+
+  img {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+.not-z-index {
+  z-index: 0;
+}
+
+.width-0 {
+  width: 0;
+  height: 0;
+}
+
+/* #endregion */
+
+.rules {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-size: 50px;
+}
+
+.die {
+  rotate: 180deg;
+  animation: die 4s ease-in-out;
+}
+
+@keyframes die {
+  100% {
+    top: 120%;
+  }
+}
